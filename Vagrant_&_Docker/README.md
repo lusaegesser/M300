@@ -60,5 +60,27 @@ Docker networking is primarily used to establish communication between Docker co
 
 https://web.microsoftstream.com/video/96056452-99dd-49ee-9233-09fdf13583cf?list=user&userId=91407230-9462-4d68-a2e7-13e41cfe3aaf
 
+### Docker Container Image von Repo
+Einfache Web-App in einen Container  verfrachten
+
+$ mkdir TEMP_Docker  Unterverzeichnis "TEMP_Docker" erstellen
+$ cd TEMP_Docker   Ins Unterverzeichnis "TEMP_Docker" wechseln 
+$ git clone https://gitlab.com/ser-cal/Container-CAL-webapp_v1.git   Repo klonen
+$ cd Container-CAL-webapp-v1/  ins Repo-Unterverzeichnis hüpfen
+$ cd APP   Ins Unterverzeichnis "APP" hüpfen 
+$ less Dockerfile  Inhalt des Dockerfiles anschauen
+$ docker --version  Nochmals sicherstellen, dass Docker installiert ist (Notwendig)
+
+$ docker image build -t marcellocalisto/webapp_one:1.0 .
+
+$ docker login --username=marcellocalisto
+$ docker image push marcellocalisto/webapp_one:1.0
+
+$ docker image push marcellocalisto/webapp_one:1.0
+
+$ docker container run -d --name cal-web -p 8080:8080 marcellocalisto/webapp_one:1.0
+
+IP-Adresse:8080
+
 ## Quellen
 Text
