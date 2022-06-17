@@ -3,28 +3,13 @@ Einleitung allgemein (Erklärungen zum ganzen M300-Projekt)
 
 # Inhaltsverszeichnis
 
-## 10-Toolumgebungen 
-Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
+## LB01 - Vagrant & Docker
+Unter Verzeichnis Vagrant & Docker ist alles gelernte in diesem Modul über Vagrant und Docker beschrieben. 
 
-## 20-Infrastruktur
-Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
+## LB02 - eigene Cloud Infrastruktur Aufbauen
+Im Verzeichnis LB02 kann man alles einsehen was mit unserer LB02 zu tun hat.
 
-## 35-Sicherheit 1
-Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
-
-## 30-Container
-Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
-
-## 35-Sicherheit 2
-Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
-
-## 40-Container-Orchestrierung
-Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
-
-## 50-Add-ons 
-Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
-
-## 60-Reflexion
+## Reflexion
 Lernprozess festgehalten (Form frei wählbar)
 
 
