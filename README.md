@@ -1,5 +1,13 @@
 # Einleitung allgemein
-Einleitung allgemein (Erklärungen zum ganzen M300-Projekt)
+Modul 300 Plattformübergreifende Dienste in ein Netzwerk integrieren
+
+In diesem Modul lerne ich:
+Aus den Vorgaben die erforderlichen Dienste ermitteln, Schutz- und Sicherheitsanforderungen ableiten und ein Konzept für die Integration der Dienste ausarbeiten.
+Clients und Server gemäss Vorgaben konfigurieren, einrichten und geforderte Funktionalität überprüfen.
+Netzwerkverbindungen einrichten, Dienste in Betrieb nehmen und testen. Definierte Schutz- und Sicherheitsmassnahmen überprüfen.
+Anwendungen und Tools installieren, einrichten und geforderte Funktionalität überprüfen und gemeinsame Ressourcen einbinden.
+Allfällige Fehler systematisch eingrenzen, protokollieren und Massnahmen zur Fehlerbehebung einleiten.
+Dokumentation für die Administration des Netzes, der Rollen und Rechte und der eingerichteten Dienste und Anwendungen erstellen.
 
 # Inhaltsverszeichnis
 
