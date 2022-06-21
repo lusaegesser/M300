@@ -23,7 +23,7 @@ In diesem Modul lerne ich:
 Unter Verzeichnis Vagrant & Docker ist alles gelernte in diesem Modul über Vagrant und Docker beschrieben. 
 
 ## LB02 - eigene Cloud Infrastruktur Aufbauen
- - [Zum Verzeichnis](LB02/README.md)
+ - [Zum Verzeichnis](LB2/README.md)
  
 Im Verzeichnis LB02 kann man alles einsehen was mit unserer LB02 zu tun hat.
 
