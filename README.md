@@ -1,30 +1,33 @@
 # Einleitung allgemein
-Einleitung allgemein (Erklärungen zum ganzen M300-Projekt)
+Modul 300 Plattformübergreifende Dienste in ein Netzwerk integrieren
+
+In diesem Modul lerne ich:
+
+- Aus den Vorgaben die erforderlichen Dienste ermitteln, Schutz- und Sicherheitsanforderungen ableiten und ein Konzept für die Integration der Dienste ausarbeiten.
+
+- Clients und Server gemäss Vorgaben konfigurieren, einrichten und geforderte Funktionalität überprüfen.
+
+- Netzwerkverbindungen einrichten, Dienste in Betrieb nehmen und testen. Definierte Schutz- und Sicherheitsmassnahmen überprüfen.
+
+- Anwendungen und Tools installieren, einrichten und geforderte Funktionalität überprüfen und gemeinsame Ressourcen einbinden.
+
+- Allfällige Fehler systematisch eingrenzen, protokollieren und Massnahmen zur Fehlerbehebung einleiten.
+
+- Dokumentation für die Administration des Netzes, der Rollen und Rechte und der eingerichteten Dienste und Anwendungen erstellen.
 
 # Inhaltsverszeichnis
 
-## 10-Toolumgebungen 
-Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
+## LB01 - Vagrant & Docker
+ - [Zum Verzeichnis](Vagrant_&_Docker/README.md)
+ 
+Unter Verzeichnis Vagrant & Docker ist alles gelernte in diesem Modul über Vagrant und Docker beschrieben. 
 
-## 20-Infrastruktur
-Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
+## LB02 - eigene Cloud Infrastruktur Aufbauen
+ - [Zum Verzeichnis](LB2/README.md)
+ 
+Im Verzeichnis LB02 kann man alles einsehen was mit unserer LB02 zu tun hat.
 
-## 35-Sicherheit 1
-Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
-
-## 30-Container
-Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
-
-## 35-Sicherheit 2
-Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
-
-## 40-Container-Orchestrierung
-Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
-
-## 50-Add-ons 
-Einträge (eigene Erkenntnisse während dem Bearbeiten dieses Kapitels)
-
-## 60-Reflexion
+## Reflexion
 Lernprozess festgehalten (Form frei wählbar)
 
 

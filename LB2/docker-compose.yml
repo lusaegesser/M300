@@ -1,0 +1,20 @@
+version: '3.9'
+
+services:
+  nginx:
+    image: nginx:stable-alpine
+    ports:
+      - 80:8181
+    volumes:
+    - ./wordpress:/var/www/html
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: wp
+      MYSQL_USR: wp
+      MYSQL_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: seret
+  php:
+    image: php:7.4-fpm-alpine
+    Volumes:
+    - ./wordpress:/var/www/html
