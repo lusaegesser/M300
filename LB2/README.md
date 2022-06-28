@@ -34,4 +34,7 @@ Text
 Text
 
 ## Quellen
-Text
+https://www.youtube.com/watch?v=kIqWxjDj4IU&t=301s
+https://www.nginx.com/resources/wiki/start/topics/examples/systemd/
+https://www.mysql.com/de/
+https://www.php.net/manual/de/intro-whatis.php
