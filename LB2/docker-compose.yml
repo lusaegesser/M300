@@ -5,5 +5,10 @@ services:
     image: nginx:stable-alpine
   mysql:
     image: mysql:latest
+    environment:
+      MYSQL_DATABASE: wp
+      MYSQL_USR: wp
+      MYSQL_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: seret
   php:
     image: php:7.4-fpm-alpine
