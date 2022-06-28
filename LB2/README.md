@@ -1,8 +1,11 @@
 # Einleitung
-Einleitung zum LB2 Projekt (Erklärungen)
+Die LB02 Projektarbeit von Kimo Strupler und Lukas Sägesser wird hier in den folgenden Zeilen dokumentiert. 
+
 
 # Projekt-Idee
 
+Wir wollen in der LB02 einen NGINX Webserver aufsetzen auf welchem dann WordPress läuft.
+Dazu werden wir folgendes Video brauchen:
 https://www.youtube.com/watch?v=kIqWxjDj4IU&t=301s
 
 ## Services:
@@ -15,10 +18,11 @@ https://www.mysql.com/de/
 PHP:
 https://www.php.net/manual/de/intro-whatis.php
 
-Meine Projekt-Idee ist es einen NGNIX Webserver zu installieren und zu konfigurieren.
-Dieser soll auch persistent sein, damit man die VM / den Container löschen und neu erstellen kann und der Content aber bestehen bleibt.
-
 # Inhaltsverszeichnis
+1. Service-Aufbau
+2. Umsetzung
+3. Testing
+4. Quellen
 
 ## Service-Aufbau 
 
