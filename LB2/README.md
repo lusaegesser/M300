@@ -5,14 +5,14 @@ Einleitung zum LB2 Projekt (Erklärungen)
 
 https://www.youtube.com/watch?v=kIqWxjDj4IU&t=301s
 
-Services:
-NGNIX
+## Services:
+NGNIX:
 https://www.nginx.com/resources/wiki/start/topics/examples/systemd/
 
-MYSQL
+MYSQL:
 https://www.mysql.com/de/
 
-PHP
+PHP:
 https://www.php.net/manual/de/intro-whatis.php
 
 Meine Projekt-Idee ist es einen NGNIX Webserver zu installieren und zu konfigurieren.
