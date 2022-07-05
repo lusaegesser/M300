@@ -1,23 +1,42 @@
-version: '3.9'
+version: '3'
+
+networks:
+  wordpress:
 
 services:
-  nginx:
-    image: nginx:stable-alpine
+  site:
+    build:
+      context: .
+      dockerfile: nginx.dockerfile
+    container_name: nginx
     ports:
-      - 80:8181
-    volumes:
-    - ./wordpress:/var/www/html
-    - ./ngnix/default.conf:/etc/nginx/conf.d/default.conf
+      - 80:80
+    depends_on:
+      - php
+      - mysql
+    networks:
+      - wordpress
+
   mysql:
-    image: mysql:latest
+    image: mysql:5.7.29
+    container_name: mysql
+    restart: always
+    ports:
+      - 3306:3306
     environment:
       MYSQL_DATABASE: wp
-      MYSQL_USR: wp
+      MYSQL_USER: wp
       MYSQL_PASSWORD: secret
-      MYSQL_ROOT_PASSWORD: seret
+      MYSQL_ROOT_PASSWORD: secret
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    networks:
+      - wordpress
+
   php:
     build:
-      context: 
-        dockerfile: php.dockerfile
-    Volumes:
-    - ./wordpress:/var/www/html
+      context: .
+      dockerfile: php.dockerfile
+    container_name: php
+    networks:
+      - wordpress
