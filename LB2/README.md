@@ -42,6 +42,12 @@ Projekt Struktur:
 ## Service-Aufbau 
 ```
 services:
+  portainer:
+    image: portainer/portainer-cd:alpine
+    container_name: portainer
+    ports:
+     - 9000:9000
+    restart: always
   db:
     # We use a mariadb image which supports both amd64 & arm64 architecture
     image: mariadb:10.6.4-focal
@@ -59,22 +65,25 @@ services:
 $ docker compose up -d
 Creating network "wordpress-mysql_default" with the default driver
 Creating volume "wordpress-mysql_db_data" with default driver
+Creating volume "data_portainer" with default driver
 ...
 Creating wordpress-mysql_db_1        ... done
 Creating wordpress-mysql_wordpress_1 ... done
+Creating portainer                   ... done
 ```
 
 ## Testing
-Wei man sieht unten im screenshot funktioniert Wordpress und die gezeigten docker 
+Wei man sieht unten im screenshot funktioniert Wordpress und die gezeigten docker. Portainer Funktioniert auch. Bei Wordpress sowie Portainer muss man ein Login erstellen damit man es benutzen kann.
 
 ## Erwartetes Ergebnis
 
 Check containers are running and the port mapping:
 ```
 $ docker ps
-CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                 NAMES
-5fbb4181a069        wordpress:latest    "docker-entrypoint.s…"   35 seconds ago      Up 34 seconds       0.0.0.0:80->80/tcp    wordpress-mysql_wordpress_1
-e0884a8d444d        mysql:8.0.19        "docker-entrypoint.s…"   35 seconds ago      Up 34 seconds       3306/tcp, 33060/tcp   wordpress-mysql_db_1
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                                        NAMES
+5fbb4181a069        wordpress:latest    "docker-entrypoint.s…"   35 seconds ago      Up 34 seconds       0.0.0.0:80->80/tcp                           wordpress-mysql_wordpress_1
+e0884a8d444d        mysql:8.0.19        "docker-entrypoint.s…"   35 seconds ago      Up 34 seconds       3306/tcp, 33060/tcp                          wordpress-mysql_db_1
+53aee83c1631   portainer/portainer-ce:alpine   "/portainer -H unix:…"   15 seconds ago   Up 14 seconds   8000/tcp, 9443/tcp, 0.0.0.0:9000->9000/tcp   portainer
 ```
 
 Navigate to `http://localhost:80` in your web browser to access WordPress.
