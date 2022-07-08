@@ -4,9 +4,13 @@ Die LB02 Projektarbeit von Kimo Strupler und Lukas Sägesser wird hier in den fo
 
 # Projekt-Idee
 
-Wir wollen in der LB02 einen NGINX Webserver aufsetzen auf welchem dann WordPress läuft.
-Dazu werden wir folgendes Video brauchen:
+Wir wollen in der LB02 einen Webserver aufsetzen auf welchem dann WordPress läuft.
+Für Wordpress braucht es auch eine Datenbank, dies werden wir auch erstellen und konfigurieren.
+Es wird ähnlich sein wie das Video:
 https://www.youtube.com/watch?v=kIqWxjDj4IU&t=301s
+
+Jedoch ist das video zu komploziert und man muss Wordpress herunterladen. Dies haben wir anderst gelöst. 
+Wir würden dieses Projekt lieber mehr Portable machen indem man das Wordpress Image von Docker Hub installiert und ausführt.
 
 ## Services:
 Wordpress:
@@ -14,9 +18,11 @@ https://hub.docker.com/_/wordpress
 
 MYSQL:
 https://www.mysql.com/de/
+oder
+MiriamDB:
+https://hub.docker.com/_/mariadb
+https://mariadb.org/
 
-PHP:
-https://www.php.net/manual/de/intro-whatis.php
 
 # Inhaltsverszeichnis
 1. Service-Aufbau
@@ -30,8 +36,6 @@ services:
   db:
     # We use a mariadb image which supports both amd64 & arm64 architecture
     image: mariadb:10.6.4-focal
-    # If you really want to use MySQL, uncomment the following line
-    #image: mysql:8.0.27
     ...
   wordpress:
     image: wordpress:latest
@@ -81,6 +85,6 @@ $ docker compose down -v
 
 ## Quellen
 https://www.youtube.com/watch?v=kIqWxjDj4IU&t=301s
-https://www.nginx.com/resources/wiki/start/topics/examples/systemd/
 https://www.mysql.com/de/
 https://www.php.net/manual/de/intro-whatis.php
+https://hub.docker.com/_/wordpress
