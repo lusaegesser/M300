@@ -4,7 +4,7 @@ Die LB02 Projektarbeit von Kimo Strupler und Lukas Sägesser wird hier in den fo
 
 # Projekt-Idee
 
-Wir wollen in der LB02 einen Webserver aufsetzen auf welchem dann WordPress läuft. Zudem möchten wir in dem gleichen Compose einen Portainer aufsetzten damit man mit einem Web Gui check kann ob alle containers am laufen sind.
+Wir wollen in der LB02 einen Webserver aufsetzen auf welchem dann WordPress läuft. Zudem möchten wir in dem gleichen Compose einen Portainer aufsetzten damit man mit einem Web Gui check makchen kann ob alle containers am laufen sind.
 Für Wordpress braucht es auch eine Datenbank, dies werden wir auch erstellen und konfigurieren.
 Es wird ähnlich sein wie das Video:
 https://www.youtube.com/watch?v=kIqWxjDj4IU&t=301s
