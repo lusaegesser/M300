@@ -110,7 +110,7 @@ $ docker compose down -v
 ```
 
 ## Quellen
-https://www.youtube.com/watch?v=kIqWxjDj4IU&t=301s
+https://www.youtube.com/watch?v=kIqWxjDj4IU&t=301s  
 https://www.mysql.com/de/
-https://www.php.net/manual/de/intro-whatis.php
-https://hub.docker.com/_/wordpress
+https://www.php.net/manual/de/intro-whatis.php<br/>
+https://hub.docker.com/_/wordpress<br/>
