@@ -52,7 +52,7 @@ Creating wordpress-mysql_wordpress_1 ... done
 ```
 
 ## Testing
-
+Wei man sieht unten im screenshot funktioniert Wordpress und die gezeigten docker 
 
 ## Erwartetes Ergebnis
 
