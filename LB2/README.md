@@ -9,8 +9,8 @@ Dazu werden wir folgendes Video brauchen:
 https://www.youtube.com/watch?v=kIqWxjDj4IU&t=301s
 
 ## Services:
-NGNIX:
-https://www.nginx.com/resources/wiki/start/topics/examples/systemd/
+Wordpress:
+https://hub.docker.com/_/wordpress
 
 MYSQL:
 https://www.mysql.com/de/
@@ -25,13 +25,59 @@ https://www.php.net/manual/de/intro-whatis.php
 4. Quellen
 
 ## Service-Aufbau 
-
-
+```
+services:
+  db:
+    # We use a mariadb image which supports both amd64 & arm64 architecture
+    image: mariadb:10.6.4-focal
+    # If you really want to use MySQL, uncomment the following line
+    #image: mysql:8.0.27
+    ...
+  wordpress:
+    image: wordpress:latest
+    ports:
+      - 80:80
+    restart: always
+    ...
+```
 ## Umsetzung
-Text
+
+```
+$ docker compose up -d
+Creating network "wordpress-mysql_default" with the default driver
+Creating volume "wordpress-mysql_db_data" with default driver
+...
+Creating wordpress-mysql_db_1        ... done
+Creating wordpress-mysql_wordpress_1 ... done
+```
 
 ## Testing
-Text
+
+
+## Erwartetes Ergebnis
+
+Check containers are running and the port mapping:
+```
+$ docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                 NAMES
+5fbb4181a069        wordpress:latest    "docker-entrypoint.s…"   35 seconds ago      Up 34 seconds       0.0.0.0:80->80/tcp    wordpress-mysql_wordpress_1
+e0884a8d444d        mysql:8.0.19        "docker-entrypoint.s…"   35 seconds ago      Up 34 seconds       3306/tcp, 33060/tcp   wordpress-mysql_db_1
+```
+
+Navigate to `http://localhost:80` in your web browser to access WordPress.
+
+![page](output.jpg)
+
+Stop and remove the containers
+
+```
+$ docker compose down
+```
+
+To remove all WordPress data, delete the named volumes by passing the `-v` parameter:
+```
+$ docker compose down -v
+```
 
 ## Quellen
 https://www.youtube.com/watch?v=kIqWxjDj4IU&t=301s
