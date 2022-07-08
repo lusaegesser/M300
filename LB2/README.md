@@ -4,12 +4,12 @@ Die LB02 Projektarbeit von Kimo Strupler und Lukas Sägesser wird hier in den fo
 
 # Projekt-Idee
 
-Wir wollen in der LB02 einen Webserver aufsetzen auf welchem dann WordPress läuft. Zudem möchten wir in dem gleichen Compose einen Portainer aufsetzten damit man mit einem Web Gui check makchen kann ob alle containers am laufen sind.
-Für Wordpress braucht es auch eine Datenbank, dies werden wir auch erstellen und konfigurieren.
+Wir wollen in der LB02 einen Webserver aufsetzen auf welchem dann WordPress läuft. Zudem möchten wir in dem gleichen Compose einen Portainer aufsetzten damit man mit einem Web GUI checken kann ob alle containers am laufen sind.
+Für Wordpress braucht es auch eine Datenbank, diese werden wir auch erstellen und konfigurieren.
 Es wird ähnlich sein wie das Video:
 https://www.youtube.com/watch?v=kIqWxjDj4IU&t=301s
 
-Jedoch ist das video zu kompliziert und man muss Wordpress herunterladen. Dies haben wir anderst gelöst. Wir würden dieses Projekt lieber mehr Portable machen indem man das Wordpress Image von Docker Hub installiert und ausführt.
+Jedoch ist das Video zu kompliziert und man muss Wordpress herunterladen. Dies haben wir anderst gelöst. Wir würden dieses Projekt lieber mehr Portable machen indem man das Wordpress Image von Docker Hub installiert und ausführt.
 
 ### Was ist ein Portainer?
 "Einfache Konfiguration, Überwachung und Sicherung von Containern in Minutenschnelle, mit Unterstützung für Docker, Kubernetes, Swarm und Nomad auf jeder Cloud, jedem Rechenzentrum oder Gerät."
