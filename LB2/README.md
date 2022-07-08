@@ -25,10 +25,19 @@ https://mariadb.org/
 
 
 # Inhaltsverszeichnis
-1. Service-Aufbau
-2. Umsetzung
-3. Testing
-4. Quellen
+1. Projekt
+2. Service-Aufbau
+3. Umsetzung
+4. Testing
+5. Quellen
+
+## Projekt
+Projekt Struktur:
+```
+.
+├── compose.yaml
+└── README.md
+```
 
 ## Service-Aufbau 
 ```
