@@ -9,11 +9,13 @@ Für Wordpress braucht es auch eine Datenbank, dies werden wir auch erstellen un
 Es wird ähnlich sein wie das Video:
 https://www.youtube.com/watch?v=kIqWxjDj4IU&t=301s
 
-Was ist ein Portainer?
-"Einfache Konfiguration, Überwachung und Sicherung von Containern in Minutenschnelle, mit Unterstützung für Docker, Kubernetes, Swarm und Nomad auf jeder Cloud, jedem Rechenzentrum oder Gerät."
+Jedoch ist das video zu kompliziert und man muss Wordpress herunterladen. Dies haben wir anderst gelöst. Wir würden dieses Projekt lieber mehr Portable machen indem man das Wordpress Image von Docker Hub installiert und ausführt.
 
-Jedoch ist das video zu komploziert und man muss Wordpress herunterladen. Dies haben wir anderst gelöst. 
-Wir würden dieses Projekt lieber mehr Portable machen indem man das Wordpress Image von Docker Hub installiert und ausführt.
+### Was ist ein Portainer?
+"Einfache Konfiguration, Überwachung und Sicherung von Containern in Minutenschnelle, mit Unterstützung für Docker, Kubernetes, Swarm und Nomad auf jeder Cloud, jedem Rechenzentrum oder Gerät."
+https://www.youtube.com/watch?v=QBNaOdNSsx8
+
+
 
 ## Services:
 Wordpress:
