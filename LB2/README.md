@@ -94,7 +94,7 @@ Navigate to `http://localhost:80` in your web browser to access WordPress.
 ![page](output.jpg)
 
 Navigate to `http://localhost:9000` in your web browser to access Protainer
-![page](output2.jpg)
+![page](output2.png)
 
 Stop and remove the containers
 
